@@ -27,9 +27,6 @@ function mp_stacks_brick_content_output_css_icons( $css_output, $post_id, $first
 	
 	//Enqueue Font Awesome CSS
 	wp_enqueue_style( 'fontawesome', MP_STACKS_PLUGIN_URL . 'includes/fonts/font-awesome/css/font-awesome.css?ver=' . MP_STACKS_VERSION );
-		
-	//Enqueue icons CSS
-	wp_enqueue_style( 'mp_stacks_icons_css', plugins_url( 'css/icons.css', dirname( __FILE__ ) ) );
 	
 	//Get the icon we want to use
 	$mp_stacks_icon_itself = mp_core_get_post_meta( $post_id, 'mp_stacks_icon_itself' );
