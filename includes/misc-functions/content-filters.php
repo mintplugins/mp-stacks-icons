@@ -59,6 +59,9 @@ function mp_stacks_brick_content_output_css_icons( $css_output, $post_id, $first
 			font-size:' . $mp_stacks_icon_size . 'px;
 			box-sizing: border-box;
 		}
+		#mp-brick-' . $post_id . ' .mp-stacks-icons-icon-title{
+			display:none;	
+		}
 		@media screen and (max-width: 600px){
 			#mp-brick-' . $post_id . ' .mp-stacks-icon{ 
 				width:' . '100%;
