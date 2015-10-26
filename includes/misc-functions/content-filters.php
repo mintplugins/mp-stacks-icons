@@ -63,7 +63,7 @@ function mp_stacks_brick_content_output_css_icons( $css_output, $post_id, $first
 			display:none;	
 		}
 		#mp-brick-' . $post_id . ' .mp-stacks-icon-inner{
-			text-align:center;
+			text-align:center; 
 		}
 		#mp-brick-' . $post_id . ' .mp-stacks-icons-icon-container{
 			display:inline-block;
