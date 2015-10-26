@@ -79,67 +79,6 @@ function mp_stacks_icons_create_meta_box(){
 			'field_value' => '200',
 		),
 		
-		array(
-			'field_id'			=> 'icon_dropshadow_showhider',
-			'field_title' 	=> __( 'Drop Shadow Settings', 'mp_stacks'),
-			'field_description' 	=> 'Set the Drop Shadow for this Icon.',
-			'field_type' 	=> 'showhider',
-			'field_value' => '0',
-		),
-			array(
-				'field_id'			=> 'icon_shadow_on',
-				'field_title' 	=> __( 'Turn Shadow On', 'mp_stacks'),
-				'field_description' 	=> 'Do you want the icon shadow to be turned on?',
-				'field_type' 	=> 'checkbox',
-				'field_value' => '',
-				'field_showhider' => 'icon_dropshadow_showhider',
-				
-			),
-			array(
-				'field_id'			=> 'icon_shadow_x',
-				'field_title' 	=> __( 'X Offset', 'mp_stacks'),
-				'field_description' 	=> 'Set the shadow offset horizontally. 50 is directly beneath the icon horizontally.',
-				'field_type' 	=> 'input_range',
-				'field_value' => '50',
-				'field_showhider' => 'icon_dropshadow_showhider',
-				
-			),
-			array(
-				'field_id'			=> 'icon_shadow_y',
-				'field_title' 	=> __( 'Y Offset', 'mp_stacks'),
-				'field_description' 	=> 'Set the shadow offset vertically. 50 is directly beneath the icon vertically.',
-				'field_type' 	=> 'input_range',
-				'field_value' => '50',
-				'field_showhider' => 'icon_dropshadow_showhider',
-				
-			),
-			array(
-				'field_id'			=> 'icon_shadow_blur',
-				'field_title' 	=> __( 'Shadow Blur/Spread', 'mp_stacks'),
-				'field_description' 	=> 'Set the shadow\'s blurriness.',
-				'field_type' 	=> 'input_range',
-				'field_value' => '50',
-				'field_showhider' => 'icon_dropshadow_showhider',
-				
-			),
-			array(
-				'field_id'			=> 'icon_shadow_color',
-				'field_title' 	=> __( 'Shadow Color', 'mp_stacks'),
-				'field_description' 	=> 'Set the color of the shadow.',
-				'field_type' 	=> 'colorpicker',
-				'field_value' => '#000',
-				'field_showhider' => 'icon_dropshadow_showhider',
-				
-			),
-			array(
-				'field_id'			=> 'icon_shadow_opacity',
-				'field_title' 	=> __( 'Shadow Opacity', 'mp_stacks'),
-				'field_description' 	=> 'Set the opacity of the shadow.',
-				'field_type' 	=> 'input_range',
-				'field_value' => '100',
-				'field_showhider' => 'icon_dropshadow_showhider'
-			),
-
 	);
 	
 	

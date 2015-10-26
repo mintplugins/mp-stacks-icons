@@ -51,7 +51,7 @@ function mp_stacks_icons_ajax_admin_css( $stylesheets, $metabox_id ){
 	}
 	
 	//Enqueue Font Awesome CSS
-	$stylesheets['fontawesome'] = plugins_url( '/fonts/font-awesome-4.0.3/css/font-awesome.css?ver=' . MP_STACKS_ICONS_VERSION, dirname( __FILE__ ) );
+	$stylesheets['fontawesome'] = MP_STACKS_PLUGIN_URL . 'includes/fonts/font-awesome/css/font-awesome.css?ver=' . MP_STACKS_VERSION;
 	
 	//Enqueue Admin CSS
 	$stylesheets['mp_stacks_admin_icons_css'] = plugins_url( 'css/admin-icons.css?ver=' . MP_STACKS_ICONS_VERSION, dirname( __FILE__ ) );

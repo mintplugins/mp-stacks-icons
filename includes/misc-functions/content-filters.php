@@ -26,7 +26,7 @@ function mp_stacks_brick_content_output_css_icons( $css_output, $post_id, $first
 	}
 	
 	//Enqueue Font Awesome CSS
-	wp_enqueue_style( 'fontawesome', plugins_url( '/fonts/font-awesome-4.0.3/css/font-awesome.css', dirname( __FILE__ ) ) );
+	wp_enqueue_style( 'fontawesome', MP_STACKS_PLUGIN_URL . 'includes/fonts/font-awesome/css/font-awesome.css?ver=' . MP_STACKS_VERSION );
 		
 	//Enqueue icons CSS
 	wp_enqueue_style( 'mp_stacks_icons_css', plugins_url( 'css/icons.css', dirname( __FILE__ ) ) );
@@ -39,22 +39,13 @@ function mp_stacks_brick_content_output_css_icons( $css_output, $post_id, $first
 			
 	//Icon text color:
 	$mp_stacks_icon_color = mp_core_get_post_meta($post_id, 'mp_stacks_icon_color', '#ffffff');
-			
-	//Get the stroke css
-	$shadow_css = NULL;
-	if ( mp_core_get_post_meta_checkbox($post_id, 'icon_shadow_on', false) ){
-		$shadow_css = mp_core_drop_shadow_css( $post_id, 'icon_' );
-	}
 		
 	//Get Icons Output
 	$css_icons_output = '
 		#mp-brick-' . $post_id . ' .mp-stacks-icon{ 
-			text-align: middle;
-		}
-		#mp-brick-' . $post_id . ' .mp-stacks-icon{ 
 			color:' . $mp_stacks_icon_color . ';
 			text-align: middle;
-			padding: 50px;
+			padding: 5px;
 		}
 		#mp-brick-' . $post_id . ' .mp-stacks-icon a,
 		#mp-brick-' . $post_id . ' .mp-stacks-icon a:hover
@@ -67,8 +58,7 @@ function mp_stacks_brick_content_output_css_icons( $css_output, $post_id, $first
 		#mp-brick-' . $post_id . ' .mp-stacks-icons-icon {
 			width: ' . $mp_stacks_icon_size . 'px;
 		}
-		#mp-brick-' . $post_id . ' .mp-stacks-icons-icon:before {' . 
-			$shadow_css . '
+		#mp-brick-' . $post_id . ' .mp-stacks-icons-icon:before {
 			font-size:' . $mp_stacks_icon_size . 'px;
 			box-sizing: border-box;
 		}

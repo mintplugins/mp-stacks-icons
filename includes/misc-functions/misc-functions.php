@@ -12,23 +12,6 @@
  * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License
  * @author      Philip Johnston
  */
- 
-/**
- * Make Icons Content Type Centered by default
- *
- * @access   public
- * @since    1.0.0
- * @param    $centered_content_types array - An array containing a string for each content-type that should default to centered brick alignment.
- * @param    $centered_content_types array - An array containing a string for each content-type that should default to centered brick alignment.
- */
-function mp_stacks_icons_centered_by_default( $centered_content_types ){
-	
-	$centered_content_types['icons'] = 'icons';
-	
-	return $centered_content_types;
-	
-}
-add_filter( 'mp_stacks_centered_content_types', 'mp_stacks_icons_centered_by_default' );
 
 /**
  * Function which returns an array of font awesome icons
@@ -37,7 +20,6 @@ function mp_stacks_icons_get_font_awesome_icons(){
 	
 	//Get all font styles in the css document and put them in an array
 	$pattern = '/\.(fa-(?:\w+(?:-)?)+):before\s+{\s*content:\s*"(.+)";\s+}/';
-	//$subject = file_get_contents( plugins_url( '/fonts/font-awesome-4.0.3/css/font-awesome.css', dirname( __FILE__ ) ) );
 	
 	$args = array(
 		'timeout'     => 5,
@@ -54,7 +36,7 @@ function mp_stacks_icons_get_font_awesome_icons(){
 		'filename'    => null
 	); 
 
-	$response = wp_remote_retrieve_body( wp_remote_get( plugins_url( '/fonts/font-awesome-4.0.3/css/font-awesome.css', dirname( __FILE__ ) ), $args ) );
+	$response = wp_remote_retrieve_body( wp_remote_get( MP_STACKS_PLUGIN_URL . 'includes/fonts/font-awesome/css/font-awesome.css?ver=' . MP_STACKS_VERSION, $args ) );
 	
 	preg_match_all($pattern, $response, $matches, PREG_SET_ORDER);
 	
