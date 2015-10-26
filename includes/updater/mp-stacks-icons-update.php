@@ -25,7 +25,7 @@
 			'software_name' => 'MP Stacks Icons', //<- The exact name of this Plugin.
 			'software_api_url' => 'http://mintplugins.com',//The URL where Icons and mp_repo are installed and checked
 			'software_filename' => 'mp-stacks-icons.php',
-			'software_licensed' => true, //<-Boolean
+			'software_licensed' => false, //<-Boolean
 		);
 		
 		//Since this is a plugin, call the Plugin Updater class
