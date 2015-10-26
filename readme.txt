@@ -34,7 +34,8 @@ See full instructions at http://mintplugins.com/doc/mp-stacks
 == Changelog ==
 
 = 1.0.0.3 = October 26, 2015
-* Make sure icon titles are hidden
+* Make sure icon titles are hidden.
+* Make sure the icons are centered.
 
 = 1.0.0.2 = October 26, 2015
 * Changed the licensed option from licensed to unlicensed (free).
