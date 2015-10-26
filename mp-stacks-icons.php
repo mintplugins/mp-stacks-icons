@@ -3,7 +3,7 @@
 Plugin Name: MP Stacks + Icons
 Plugin URI: http://mintplugins.com
 Description: Extremely simple Content-Type Add-on for MP Stacks which displays a single large "icon" of your chosing. Choose any "Font Awesome" Icon.
-Version: 1.0.0.0
+Version: 1.0.0.1
 Author: Mint Plugins
 Author URI: http://mintplugins.com
 Text Domain: mp_stacks_icons
@@ -34,7 +34,7 @@ License: GPL2
 */
 // Plugin version
 if( !defined( 'MP_STACKS_ICONS_VERSION' ) )
-	define( 'MP_STACKS_ICONS_VERSION', '1.0.0.0' );
+	define( 'MP_STACKS_ICONS_VERSION', '1.0.0.1' );
 
 // Plugin Folder URL
 if( !defined( 'MP_STACKS_ICONS_PLUGIN_URL' ) )
